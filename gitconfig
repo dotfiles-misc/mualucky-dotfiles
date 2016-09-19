@@ -1,0 +1,25 @@
+[user]
+	name = bob wang
+	email = bob.wang@odw.com.cn
+[http]
+	sslVerify = false
+[init]
+	templatedir = ~/.git_template
+[alias]
+	ctags = !.git/hooks/ctags
+  lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%cr)%Creset %C(blue)<%an>%Creset' --abbrev-commit --date=short
+[core]
+	editor = /usr/bin/vimx
+[color "diff"]
+  meta = blue
+  frag = magenta
+  old = red
+  new = green
+[color "status"]
+  added = green
+  changed = red
+  untracked = cyan
+[rebase]
+	autosquash = true
+[advice]
+	statusHints = false
