@@ -12,8 +12,9 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
-" Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/syntastic'
+Plug 'terryma/vim-multiple-cursors'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -148,6 +149,7 @@ let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 let NERDTreeShowBookmarks=1
 let NERDTreeWinPos="left"
+" let g:NERDTreeShowHidden=1
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
