@@ -1,5 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 export TERM="screen-256color"
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Node
 export NVM_DIR="/home/wyanbo/.nvm"
@@ -7,7 +8,6 @@ export NVM_DIR="/home/wyanbo/.nvm"
 
 ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_SYMBOL=$'\u262F'
-SPACESHIP_RUBY_SYMBOL=$'\u211D'
 DEFAULT_USER="$USER"
 
 # Alias
