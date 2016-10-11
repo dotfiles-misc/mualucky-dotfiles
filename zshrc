@@ -1,10 +1,13 @@
 export ZSH=$HOME/.oh-my-zsh
 export TERM="screen-256color"
-export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Node
 export NVM_DIR="/home/wyanbo/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# RVM
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_SYMBOL=$'\u262F'
