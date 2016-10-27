@@ -2,12 +2,14 @@ export ZSH=$HOME/.oh-my-zsh
 export TERM="screen-256color"
 
 # Node
-export NVM_DIR="/home/wyanbo/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+export PATH="$HOME/bin:$PATH"
 
 ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_SYMBOL=$'\u262F'
@@ -16,7 +18,6 @@ DEFAULT_USER="$USER"
 # Alias
 alias ll='ls -l'
 alias la='ls -a'
-alias vi='vimx'
 alias path='echo $PATH | tr \: \\n'
 alias rf='rm -rf'
 alias ms='tmuxinator start'
