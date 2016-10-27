@@ -1,6 +1,6 @@
 # ~/.tmuxinator/infoserver.yml
 
-name: infoserver
+name: work
 root: ~/odw/infoserver
 
 # Optional tmux socket
