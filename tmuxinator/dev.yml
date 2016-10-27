@@ -1,6 +1,6 @@
 # ~/.tmuxinator/infoserver.yml
 
-name: infoserver
+name: dev
 root: /var/www/infoserver/current
 
 # Optional tmux socket
@@ -32,10 +32,12 @@ root: /var/www/infoserver/current
 
 windows:
   - monit:
-      layout: main-vertical
+      layout: even-vertical
       panes:
         - ls:
           - pm2 ls
         - logs:
           - pm2 logs
-  - files: cd ..
+        - monit: 
+          - pm2 monit
+  - files: htop
