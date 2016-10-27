@@ -40,4 +40,4 @@ windows:
           - pm2 logs
         - monit: 
           - pm2 monit
-  - files: htop
+  - htop: htop
