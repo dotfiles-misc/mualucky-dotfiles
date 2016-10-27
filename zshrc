@@ -4,6 +4,7 @@ export TERM="screen-256color"
 # Node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+export NODE_TLS_REJECT_UNAUTHORIZED=0
 
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -21,6 +22,7 @@ alias la='ls -a'
 alias path='echo $PATH | tr \: \\n'
 alias rf='rm -rf'
 alias ms='tmuxinator start'
+alias mux='tmuxinator'
 alias grep="grep --color=auto"
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
@@ -105,3 +107,5 @@ bindkey '^E' end-of-line
 bindkey '^f' vi-forward-word
 bindkey '^r' history-incremental-search-backward
 bindkey '^[' vi-cmd-mode
+
+zss() ssh "$@" -t zsh
