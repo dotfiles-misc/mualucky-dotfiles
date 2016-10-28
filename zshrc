@@ -12,6 +12,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export PATH="$HOME/bin:$PATH"
 
+export SHELL=/bin/zsh
+
 ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_SYMBOL=$'\u262F'
 DEFAULT_USER="$USER"
