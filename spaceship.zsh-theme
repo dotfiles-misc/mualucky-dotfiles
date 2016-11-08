@@ -50,16 +50,10 @@ spaceship_user() {
 # If there is an ssh connections, then show user and current machine.
 # If user is not $USER, then show username.
 spaceship_host() {
-  if [[ -n $SSH_CONNECTION ]]; then
-    echo -n "$(spaceship_user)"
-    echo -n " %Bat%b "
-    echo -n "%{$fg_bold[green]%}%m%{$reset_color%}"
-    echo -n " %Bin%b "
-  elif [[ $LOGNAME != $USER ]] || [[ $USER == 'root' ]]; then
-    echo -n "$(spaceship_user)"
-    echo -n " %Bin%b "
-    echo -n "%{$reset_color%}"
-  fi
+  echo -n "$(spaceship_user)"
+  echo -n " %Bat%b "
+  echo -n "%{$fg_bold[grey]%}%m%{$reset_color%}"
+  echo -n " %Bin%b "
 }
 
 # Current directory.
