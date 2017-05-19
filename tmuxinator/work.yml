@@ -32,7 +32,7 @@ root: ~/odw/infoserver
 
 windows:
   - editor: vi
-  - server: npm run dev
+  - server: npm run debug
   - git:
       layout: even-horizontal
       panes:

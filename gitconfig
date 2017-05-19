@@ -23,3 +23,5 @@
 	autosquash = true
 [advice]
 	statusHints = false
+[color]
+	ui = auto
