@@ -11,7 +11,7 @@ Plug 'godlygeek/tabular'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-commentary'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
@@ -24,19 +24,21 @@ Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'rodjek/vim-puppet'
-" Plug 'vim-ruby/vim-ruby'
-" Plug 'tpope/vim-rails'
-" Plug 'tpope/vim-haml'
-" Plug 'hail2u/vim-css3-syntax'
-" Plug 'kchmck/vim-coffee-script'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-haml'
+Plug 'tpope/vim-sleuth'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'kchmck/vim-coffee-script'
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
 call plug#end()
 
-filetype plugin on "required
-
-filetype on
 syntax on
+filetype on
+filetype plugin on
+filetype indent on
+set paste
 set t_Co=256
 set background=dark
 set t_RV=
@@ -57,11 +59,11 @@ set ignorecase
 set smartcase
 set expandtab
 set smarttab
-set autoindent
 set smartindent
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+set autoindent
 set list listchars=eol:¬,tab:▸\ ,trail:.,
 set history=200
 
@@ -121,13 +123,6 @@ let g:javascript_conceal_static         = "•"
 let g:javascript_conceal_super          = "Ω"
 let g:javascript_conceal_arrow_function = "⇒"
 
-" Nerdcommenter
-let g:NERDSpaceDelims = 1
-let g:NERDCompactSexyComs = 1
-let g:NERDDefaultAlign = 'left'
-let g:NERDCommentEmptyLines = 1
-let g:NERDTrimTrailingWhitespace = 1
-
 " Tagbar
 let g:tagbar_width=35
 let g:tagbar_autofocus=1
@@ -142,6 +137,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " Vim-indent-guides
 let g:indent_guides_guide_size = 1
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Nerdtree
 let NERDChristmasTree=1
